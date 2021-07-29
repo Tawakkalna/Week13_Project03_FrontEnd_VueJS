@@ -22,7 +22,10 @@
 # الاضافة Bonus: 
 - أي تحسين في تجربة المستخدم UX/UI للموقع والتطبيق
 -  استخدام ASP.NET 
-- استخدام API QR Code 
+- استخدام API QR Code
+- استخدام Agile software development
+- عمل host على AWS او Azure
+- استخدام  اللغة العربي و الانجليزية
 
 
 https://drive.google.com/drive/folders/1qAvzaCp8HlqNU6_tycwKbckwKm_KWPJ2?usp=sharing
