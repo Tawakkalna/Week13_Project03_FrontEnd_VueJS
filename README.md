@@ -17,6 +17,14 @@
 - Web leader
 - Mobile Leader
 - Developers 
+  
+# التسليم
+
+١-نهاية يوم الأحد 2020/08/01
+٢- رابط Github
+٣- ملفين Documentation لكل مشروع
+٤- عمل Presentations لكل مشروع 
+ 
 
 
 # الاضافة Bonus: 
