@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+        <Banner/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Banner from "./components/Banner.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Banner,
+  },
+};
 </script>
 
 <style>
@@ -23,4 +24,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+@import "~bootstrap/dist/css/bootstrap.css";
 </style>
