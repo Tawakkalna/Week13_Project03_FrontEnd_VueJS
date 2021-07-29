@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container" lang="ar" dir="rtl">
+    <HowitWorks />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HowitWorks from './components/HowitWorks.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HowitWorks
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+ @font-face {
+    font-family: "DINNextLTArabic";
+    src: url("./font/DINNextLTArabic-Regular-2.ttf") format('truetype');
 }
+
+div {
+  /* position: relative; */
+  font-family: 'DINNextLTArabic', sans-serif;
+}
+
 </style>
