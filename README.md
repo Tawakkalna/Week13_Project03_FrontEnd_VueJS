@@ -20,10 +20,10 @@
   
 # التسليم
 
-١-نهاية يوم الأحد 2020/08/01
-٢- رابط Github
-٣- ملفين Documentation لكل مشروع
-٤- عمل Presentations لكل مشروع 
+- نهاية يوم الأحد 2020/08/01
+-  رابط Github
+- ملفين Documentation لكل مشروع
+- عمل Presentations لكل مشروع 
  
 
 
