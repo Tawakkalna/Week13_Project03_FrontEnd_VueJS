@@ -1,0 +1,9 @@
+<svg id="kaaba_1_" data-name="kaaba (1)" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <circle id="Ellipse_16" data-name="Ellipse 16" cx="10" cy="10" r="10" transform="translate(492 433)" fill="#23aa9c"/>
+  <path id="Path_147" data-name="Path 147" d="M509.07,2.93A10.076,10.076,0,0,0,502,0H10A10,10,0,0,0,0,10V502a10,10,0,0,0,10,10H502a10,10,0,0,0,10-10V488a10,10,0,0,0-20-.01V492H20V235H50a10,10,0,0,0,10-10V185a10,10,0,0,0-10-10H20V155H492v20H462a10,10,0,0,0-10,10v40a10,10,0,0,0,10,10h30V398a10,10,0,0,0,20,0V10a10.076,10.076,0,0,0-2.93-7.07ZM492,20V95H20V20ZM40,195v20H20V195ZM20,135V115H492v20Zm452,80V195h20v20Z" fill="#23aa9c"/>
+  <path id="Path_148" data-name="Path 148" d="M296,175a10,10,0,0,0-10,10v40a10,10,0,0,0,10,10h86a10,10,0,0,0,10-10V185a10,10,0,0,0-10-10Zm76,40H306V195h66Z" fill="#23aa9c"/>
+  <path id="Path_149" data-name="Path 149" d="M130,175a10,10,0,0,0-10,10V400a10,10,0,0,0,10,10h86a10,10,0,0,0,10-10V185a10,10,0,0,0-10-10Zm76,215H140V195h66Z" fill="#23aa9c"/>
+  <circle id="Ellipse_17" data-name="Ellipse 17" cx="10" cy="10" r="10" transform="translate(80 175)" fill="#23aa9c"/>
+  <circle id="Ellipse_18" data-name="Ellipse 18" cx="10" cy="10" r="10" transform="translate(246 175)" fill="#23aa9c"/>
+  <circle id="Ellipse_19" data-name="Ellipse 19" cx="10" cy="10" r="10" transform="translate(412 175)" fill="#23aa9c"/>
+</svg>
