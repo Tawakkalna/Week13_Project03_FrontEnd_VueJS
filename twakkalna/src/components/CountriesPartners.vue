@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="direction: rtl;">
                                 <a href="countries.html" class="btn seeMoreBtn rounded-pill mx-md-3 my-4"> 
                                     <span>عرض المزيد</span>
                                     <i class="fas fa-chevron-left mr-2"></i>
@@ -101,9 +101,35 @@ export default {
 </script>
 
 <style>
-.register{
+.stc {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+.stc:before {
+    content: "";
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    padding: 70px 60px;
+    top: 40px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.stc img {
+    position: relative;
+    z-index: 2;
+    margin: 80px 60px;
+}
+.register{
+    direction: rtl;
 }
 #SaudiArabia{
     background-image: url(../images/SaudiArabia.png);
