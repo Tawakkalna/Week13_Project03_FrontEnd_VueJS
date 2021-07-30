@@ -36,10 +36,7 @@ export default {
     .arrows {
         margin-top: 100px;
         margin-left: -40px;
-    }
-
-    .left, .right {
-        color: rgb(56, 221, 139);
+        color: #1FA99A;
         font-size: 20px;
     }
 
@@ -72,7 +69,7 @@ export default {
     }
 
     .text1-container {
-        background-color: rgb(56, 221, 139);
+        background-color: #1FA99A;
         width: 80%;
         height: 100px;
         margin-top: 300px;

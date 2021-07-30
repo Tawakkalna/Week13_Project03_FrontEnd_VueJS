@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <h1>تواصل معنا</h1>
+    <h1 style="color: #1FA99A">تواصل معنا</h1>
   </div>
   <div class="row">
     <div class="offset-7 col-5 contact-details mt-5">
@@ -34,7 +34,7 @@ export default {
 
 <style>
     .contact-details {
-        background-color: green;
+        background-color: #1FA99A;
         text-align: right;
         padding-top: 20px;
         padding-bottom: 20px;

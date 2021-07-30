@@ -1,16 +1,16 @@
 <template>
     <div class="container">
-        <ContactUs/>
+        <Banner/>
     </div>
 </template>
 
 <script>
-import ContactUs from './components/ContactUs.vue';
+import Banner from './components/Banner.vue';
 
 export default {
   name: "App",
   components: {
-    ContactUs,
+    Banner,
   },
 };
 </script>
