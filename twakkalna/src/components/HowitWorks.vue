@@ -184,4 +184,17 @@ export default {
   transform: rotate(180deg);
   top: 120px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .arrow {
+  height: 20px;
+  top: 40px;
+  right: 125px;
+  position: absolute;
+  }
+  .upsidedown {
+  transform: rotate(180deg);
+  top: 120px;
+  }
+}
 </style>
