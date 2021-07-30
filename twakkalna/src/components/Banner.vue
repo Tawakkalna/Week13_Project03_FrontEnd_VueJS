@@ -89,7 +89,7 @@ export default {
     .text2 {
         margin-top: 500px;
         margin-bottom: 20px;
-        margin-right: 15nppx;
+        margin-right: 15px;
         font-size: 30px;
         color: rgb(16, 54, 22);
         justify-content: flex-end;
