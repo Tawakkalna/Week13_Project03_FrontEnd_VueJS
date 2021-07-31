@@ -7,7 +7,7 @@
           <Service />
           <HowitWorks />
         </div>
-        <!-- CountriesPartners -->
+        <CountriesPartners />
     </div>
 </template>
 
@@ -17,7 +17,7 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Service from './components/Service.vue';
 import HowitWorks from './components/HowitWorks.vue';
-// import CountriesPartners from './components/CountriesPartners.vue';
+import CountriesPartners from './components/CountriesPartners.vue';
 
 export default {
   name: "App",
@@ -26,7 +26,7 @@ export default {
     Navbar,
     About,
     Service,
-    // CountriesPartners,
+    CountriesPartners,
     HowitWorks
   }
 }
