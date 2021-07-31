@@ -35,7 +35,7 @@ export default {
 <style scoped>
     .arrows {
         margin-top: 100px;
-        margin-left: -360px;
+        margin-left: -600px;
         color: #1FA99A;
         font-size: 20px;
     }

@@ -7,12 +7,9 @@
                         <div class="col-lg-4 col-12 foot4">
                             <div class="download-apps">
                                 <label>تحميل التطبيق</label>
-                                <a href="https://appgallery5.huawei.com/#/app/C102438999" target="_blank"><img
-                                        src="https://ta.sdaia.gov.sa/images/NewImages/huaweigalary.png" alt="" /></a>
-                                <a href="https://apps.apple.com/sa/app/tawakkalna/id1506236754" target="_blank"><img
-                                        src="https://ta.sdaia.gov.sa/images/NewImages/appstore.png" alt="" /></a>
-                                <a href="https://play.google.com/store/apps/details?id=sa.gov.nic.tawakkalna"
-                                    target="_blank"><img src="https://ta.sdaia.gov.sa/images/NewImages/googleplay.png" alt="" /></a>
+                                <img src='../assets/huaweigalary.png' alt='store' />
+                                <img src='../assets/appstore.png' alt='store' />
+                                <img src='../assets/googleplay.png' alt='store' />
                             </div>
                         </div>
 
@@ -30,9 +27,9 @@
                         </div>
                         <div class="col-lg-3 col-12 foot1">
                             <div class="footer-logo text-center">
-                                <a href="#tawakkalna_section_1"><img src="https://ta.sdaia.gov.sa/images/NewImages/logo.svg" alt=""
+                                <a href="#tawakkalna_section_1"><img src="../assets/logo.svg" alt=""
                                         class="img-fluid" title="" /></a>
-                                <a href="https://sdaia.gov.sa/" class="px-2 d-block" target="_blank"><img src="https://ta.sdaia.gov.sa/images/sdaia.svg" alt=""
+                                <a href="https://sdaia.gov.sa/" class="px-2 d-block sdaia-logo" target="_blank"><img src="../assets/sdaia.svg" alt=""
                                         class="img-fluid mt-4" /></a>
                             </div>
                         </div>
@@ -75,7 +72,7 @@ export default {
 /*--- footer --- */
  footer {
 	position: relative;
-	background: #e7ebf1;
+	background: #f8fbff;
 	border-top: 1px solid rgba(214, 217, 222, .1);
 }
  footer .footer-logo {
@@ -127,7 +124,7 @@ display: block;
 font-size: 16px;
 margin-bottom: 20px;
 }
- footer .download-apps a {
+ footer .download-apps img {
 color: rgb(106, 114, 119);
 line-height: 28px;
 font-size: 16px;
@@ -136,11 +133,12 @@ transition: all 0.3s ease-out;
 text-decoration: none;
 margin-right: 10px;
 }
- footer .download-apps a img {
+ footer .download-apps img {
 height: 35px;
 }
- footer .download-apps a:hover {
+ footer .download-apps img:hover {
 opacity: 0.7;
+cursor: pointer;
 }
  footer .copyrights {
 padding: 30px 0;
@@ -155,6 +153,9 @@ width: 100%;
  footer .copyrights p {
 color: rgb(106, 114, 119);
 font-size: 16px;
+}
+.sdaia-logo{
+    width: 140px;
 }
  
 </style>

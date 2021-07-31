@@ -1,5 +1,5 @@
 <template>
-  <div class="row my-5">
+  <div class="row m-5">
       <div class="col-6">
           <div class="tab-content-area">
               <div class="tab-content active"> <iframe width="550" height="333" src="https://www.youtube.com/embed/FN9JCUfLzzA"/> </div>

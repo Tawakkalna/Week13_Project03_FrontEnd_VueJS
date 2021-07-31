@@ -1,6 +1,6 @@
 <template>
               <section class="offers gray" id="offers">
-                <div class="container">
+                <div class="container py-5">
                     <h2 class="title text-center" data-aos="fade-down" data-aos-duration="300">
                         خدمات توكلنا خلال فترة العودة بحذر
                     </h2>
@@ -535,6 +535,14 @@ export default {
 </script>
 
 <style scoped>
+h2{
+    font-weight: bold;
+    font-size: 22px;
+}
+section{
+    text-align: right;
+    background-color: #f8fbff;
+}
 .servicesIcon{
     max-height: 45px !important;
     max-width: 45px !important;

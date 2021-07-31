@@ -1,8 +1,8 @@
 <template>
   <main>
                   <section class="register" id="countries">
-                <div class="container countriesShape">
-                    <h2 class="title mr-md-4" data-aos="fade-down" data-aos-duration="200">
+                <div class="container countriesShape my-5">
+                    <h2 class="title mr-md-4 head-title" data-aos="fade-down" data-aos-duration="200">
                         دول المرحلة الأولى التي يعمل فيها تطبيق توكلنا
                     </h2>
                     <div class="row">
@@ -227,5 +227,11 @@ li{
 }
 .countries{
     margin-right: 0px;
+}
+.head-title{
+    text-align: right;
+    color: #1fa99a;
+    font-weight: bold;
+    margin-bottom: 75px;
 }
 </style>

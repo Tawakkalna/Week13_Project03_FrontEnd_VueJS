@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container text-end">
     <h1 class="header fw-bold my-5">كيف يعمل توكلنا؟</h1>
     <div class="fw-bold fs-2 mb-3" style="color: #323e4a">
       خطوات التسجيل في توكلنا
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="row steps container">
+    <div class="row steps container w-75 m-auto">
       <div class="col d-flex flex-column align-items-center">
         1
         <img class="arrow" src="../images/steps/step.png" alt="step1" />
@@ -83,8 +83,8 @@
       </div>
 
       <br />
-      <Tutorial />
     </div>
+      <Tutorial />
   </div>
 </template>
 <script>
@@ -171,7 +171,7 @@ export default {
 .arrow {
   height: 20px;
   top: 40px;
-  right: 200px;
+  right: 141px;
   position: absolute;
 }
 .steps div {
