@@ -47,6 +47,7 @@ export default {
     }
 
     .left, .right {
+        font-family: sans-serif;
         width: 40px;
         height: 40px;
         border-radius: 50%;

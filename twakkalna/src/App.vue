@@ -5,6 +5,7 @@
         <div class="margin-top-100px" dir="rtl" lang="ar">
           <About/>
           <Service />
+          <HowitWorks />
         </div>
         <!-- CountriesPartners -->
     </div>
@@ -15,6 +16,7 @@ import Banner from './components/Banner.vue';
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Service from './components/Service.vue';
+import HowitWorks from './components/HowitWorks.vue';
 // import CountriesPartners from './components/CountriesPartners.vue';
 
 export default {
@@ -24,7 +26,8 @@ export default {
     Navbar,
     About,
     Service,
-    // CountriesPartners
+    // CountriesPartners,
+    HowitWorks
   }
 }
 </script>
@@ -43,5 +46,13 @@ export default {
     margin-top: 60px;
   }
 
-  @import "~bootstrap/dist/css/bootstrap.css";
+ @font-face {
+    font-family: "DINNextLTArabic";
+    src: url("./font/DINNextLTArabic-Regular-2.ttf") format('truetype');
+  }
+
+  div {
+    /* position: relative; */
+    font-family: 'DINNextLTArabic', sans-serif;
+  }
 </style>
