@@ -4,7 +4,9 @@
         <Banner/>
         <div class="margin-top-100px" dir="rtl" lang="ar">
           <About/>
+          <Service />
         </div>
+        <!-- CountriesPartners -->
     </div>
 </template>
 
@@ -12,13 +14,17 @@
 import Banner from './components/Banner.vue';
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
+import Service from './components/Service.vue';
+// import CountriesPartners from './components/CountriesPartners.vue';
 
 export default {
   name: "App",
   components: {
     Banner,
     Navbar,
-    About
+    About,
+    Service,
+    // CountriesPartners
   }
 }
 </script>
