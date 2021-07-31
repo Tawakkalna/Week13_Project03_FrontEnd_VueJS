@@ -96,6 +96,10 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  right: 0;
+}
+
 *:before,
 *:after {
   -moz-box-sizing: border-box;
