@@ -8,11 +8,13 @@
           <HowitWorks />
         </div>
         <CountriesPartners />
+        <ContactUs />
     </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue';
+import ContactUs from './components/ContactUs.vue';
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Service from './components/Service.vue';
@@ -27,7 +29,8 @@ export default {
     About,
     Service,
     CountriesPartners,
-    HowitWorks
+    HowitWorks,
+    ContactUs
   }
 }
 </script>
