@@ -1,18 +1,21 @@
 <template>
     <div class="container">
+        <Navbar/>
         <Banner/>
     </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
   name: "App",
   components: {
     Banner,
-  },
-};
+    Navbar
+  }
+}
 </script>
 
 <style>
