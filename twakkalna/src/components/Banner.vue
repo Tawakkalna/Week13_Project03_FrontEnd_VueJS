@@ -13,13 +13,13 @@
                 <div class="col-4"><img class="download" src="../assets/googleplay.png" alt="google play"></div>
             </div>
             <div class="row arrows">
-                <ul class="pagination">
-                    <li class="left">&lt;</li>
+                <ul class="pagination center">
+                    <li class="left"><span>&lt;</span></li>
                     <li class="unselected"></li>
                     <li class="selected"></li>
                     <li class="unselected"></li>
                     <li class="unselected"></li>
-                    <li class="right">&gt;</li>
+                    <li class="right"><span>&gt;</span></li>
                 </ul>
             </div>
         </div>
@@ -40,6 +40,22 @@ export default {
         font-size: 20px;
     }
 
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left, .right {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 #80808061;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .left {
         margin-right: 40px;
     }
@@ -53,7 +69,7 @@ export default {
         height: 10px;
         width: 10px;
         border-radius: 45%;
-        margin: 8.5px 5px 0 5px;
+        margin: 0px 5px 0 5px
     }
     
     .selected {
