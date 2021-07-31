@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <Navbar/>
         <Banner/>
         <div class="margin-top-100px" dir="rtl" lang="ar">

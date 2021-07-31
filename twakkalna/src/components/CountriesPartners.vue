@@ -50,8 +50,8 @@
                 <h2 class="title" data-aos="zoom-in" data-aos-duration="200">
                     شركاء النجاح
                 </h2>
-                <div class="row no-gutters">
-                    <div class="col-xl-5 col-lg-4 col-12">
+                <div class="row countries">
+                    <div class="col-4">
                         <h5 data-aos="zoom-in" data-aos-duration="200" class="title stcMB">الشريك الإستراتيجي</h5>
                         <div class="stc">
                             <a href="javascript:;" class="not-active" data-aos="zoom-in" data-aos-duration="400"><img
@@ -59,7 +59,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-5 col-12">
+                    <div class="col-4">
                         <h5 class="title text-center" data-aos="zoom-in" data-aos-duration="200">
                             الشركاء التقنيين
                         </h5>
@@ -76,7 +76,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-12">
+                    <div class="col-4">
 
                         <h2 class="title" data-aos="zoom-in" data-aos-duration="200">
                             شكراً لكم
@@ -100,7 +100,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .stc {
     display: -webkit-box;
     display: -moz-box;
@@ -150,7 +150,7 @@ export default {
     background-image: url(../images/Oman.png);
 }
 .partners{
-    background-color: rgb(8,100,79) !important;
+    background-color: #1FA99A;
     color: white;
 }
 li{
@@ -224,5 +224,8 @@ li{
 }
 .stcMB{
     margin-bottom: 8px;
+}
+.countries{
+    margin-right: 0px;
 }
 </style>

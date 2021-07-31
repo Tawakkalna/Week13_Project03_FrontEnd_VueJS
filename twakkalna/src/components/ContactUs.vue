@@ -1,8 +1,11 @@
 <template>
-  <div class="row">
+<div class="my-5">
+  
+  
+  <div class="row contact-us">
     <h1 style="color: #1FA99A">تواصل معنا</h1>
   </div>
-  <div class="row">
+  <div class="row contact-us">
     <div class="offset-7 col-5 contact-details mt-5">
       <div>
         <span class="mx-1">8001289999</span>
@@ -24,6 +27,8 @@
       </div>
     </div>
   </div>
+  
+   </div> 
 </template>
 
 <script>
@@ -32,7 +37,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
     .contact-details {
         background-color: #1FA99A;
         text-align: right;
@@ -42,7 +47,10 @@ export default {
         border-end-start-radius: 5em 5em;
         color: white;
     }
+    .contact-us{
+        margin-right: 0px;
 
+    }
     .icon {
         width: 40px;
     }

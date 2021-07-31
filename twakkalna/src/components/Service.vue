@@ -534,7 +534,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .servicesIcon{
     max-height: 45px !important;
     max-width: 45px !important;

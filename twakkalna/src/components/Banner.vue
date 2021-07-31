@@ -114,7 +114,7 @@ export default {
 
     .banner {
         background-image: url("../assets/hero.png");
-        background-size: 90% 100%;
+        background-size: 63% 100%;
         background-repeat: no-repeat;
         width: 100%;
         height: 45rem;
