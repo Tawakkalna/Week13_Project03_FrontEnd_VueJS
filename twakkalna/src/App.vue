@@ -7,6 +7,7 @@
           <Service />
           <HowitWorks />
         </div>
+        <FAQ />
         <CountriesPartners />
         <ContactUs />
         <Footer />
@@ -21,7 +22,9 @@ import About from './components/About.vue';
 import Service from './components/Service.vue';
 import HowitWorks from './components/HowitWorks.vue';
 import CountriesPartners from './components/CountriesPartners.vue';
+import FAQ from "./components/FAQ.vue";
 import Footer from './components/Footer.vue';
+
 
 export default {
   name: "App",
@@ -32,6 +35,7 @@ export default {
     Service,
     CountriesPartners,
     HowitWorks,
+    FAQ,
     ContactUs,
     Footer
   }
