@@ -2,7 +2,7 @@
 <a href=""><img src="https://raw.githubusercontent.com/Tawakkalna/react-native/main/TawakklnaA/assets/logo.png" alt="Tawakkalna Logo" width="256"/></a>
 </br>
 
-<a href="#">Tawakkalna: VueJS</a>
+<a href="https://tawakkalna.netlify.app/">Tawakkalna: VueJS</a>
 
 </h1>
 <h4 align="center">Tawakkalna landing page using VueJS</h4>
@@ -12,11 +12,11 @@
   <a href="#how-to-use">How To Use</a> •
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#license">License</a> •
-  <a href="">Live</a>
+  <a href="https://tawakkalna.netlify.app/">Live</a>
 </p>
 
 <p align="center">
-  <a href=""><img src="https://github.com/Tawakkalna/vue/blob/main/twakkalna/public/demo.gif" alt="demo"/></a>
+  <a href="https://tawakkalna.netlify.app/"><img src="https://github.com/Tawakkalna/vue/blob/main/twakkalna/public/demo.gif" alt="demo"/></a>
 </p>
 
 <div id="key-features">
