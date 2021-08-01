@@ -23,7 +23,7 @@
               </p>
             </div>
           </div>
-          <form action="/details">
+          <form @submit.prevent="login">
             <div>
               <input
                 placeholder="رقم الھویة الوطنیة/ هوية مقيم/ رقم الجوال"
@@ -73,10 +73,31 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "LoginPage",
   props: {
     msg: String,
+  },
+  methods: {
+    login: function(e) {
+      const loginDetails = {
+        national_id: "1099664582",
+        password: "secret"
+      };
+
+      axios.post('http://tawakalna.maneea.net/api/login', loginDetails)
+      .then((response) => {
+        localStorage.setItem("token", response.data.token);
+        this.$router.push("/details");
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      
+      e.preventDefault();
+    },
   },
 };
 </script>
