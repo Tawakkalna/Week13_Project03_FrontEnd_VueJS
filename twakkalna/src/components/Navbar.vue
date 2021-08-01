@@ -58,11 +58,11 @@
                                                     </ul>
                                                 </li>
                                                 <span class="nav-item twk-web">
-                                                    <a href="https://tawakkalna.sdaia.gov.sa" class="nav-link "
-                                                        target="_blank" id="login"> تسجيل الدخول
+                                                    <router-link class="nav-link" id="login" to="/login"> تسجيل الدخول
                                                         <img
-                                                            src="../assets/arrow-left.png" alt=""
-                                                            class="mr-3" id="arrow" /> </a>
+                                                            src="../assets/arrow-left.png" alt="arrow"
+                                                            class="mr-3" id="arrow" /> 
+                                                            </router-link>
                                                 </span>
                                             </ul>
                                         </div>
@@ -74,7 +74,9 @@
                     </div>
                 </div>
             </div>
+            
         </header>
+        
 </template>
 
 <script>

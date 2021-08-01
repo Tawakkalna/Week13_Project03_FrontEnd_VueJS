@@ -1,17 +1,7 @@
 <template>
     <div>
-        <!-- <Navbar/>
-        <Banner/>
-        <div class="margin-top-100px" dir="rtl" lang="ar">
-          <About/>
-          <Service />
-          <HowitWorks />
-        </div>
-        <FAQ />
-        <CountriesPartners />
-        <ContactUs />
-        <Footer /> -->
-        <Details />
+        <router-view />
+
     </div>
 </template>
 
@@ -25,7 +15,8 @@
 // import CountriesPartners from './components/CountriesPartners.vue';
 // import FAQ from "./components/FAQ.vue";
 // import Footer from './components/Footer.vue';
-import Details from './components/Details.vue';
+// import Details from './components/Details.vue';
+// import Home from './views/Home.vue';
 
 
 export default {
@@ -40,15 +31,13 @@ export default {
     // FAQ,
     // ContactUs,
     // Footer,
-    Details
+    // Details,
+    // Home
   }
 }
 </script>
 
 <style>
-  .margin-top-100px {
-    margin-top: 230px;
-  }
 
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

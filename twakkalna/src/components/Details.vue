@@ -28,7 +28,7 @@
 
             </div>
             <li class="nav-item d-inline-block">
-                  <a class="nav-link" href="#">تسجيل الخروج</a>
+                  <router-link class="nav-link" to="/">تسجيل الخروج</router-link>
                 </li>
           </div>
 
@@ -241,6 +241,7 @@
           </div>
       </div>
     </div>
+    <router-view/> 
   </section>
 </template>
 
