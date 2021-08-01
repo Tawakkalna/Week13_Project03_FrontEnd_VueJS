@@ -79,12 +79,12 @@
 
                   <div class="col-7">
                       <p>الاسم</p>
-                      <h3 class="fw-bold">محمد راشد البلوي</h3>
+                      <h3 class="fw-bold"> {{name}} </h3>
                   </div>
 
                   <div class="col-5">
                       <p>رقم الهوية الوطنية / هوية مقيم</p>
-                      <h3 class="fw-bold">1101234567</h3>
+                      <h3 class="fw-bold"> {{id}} </h3>
                   </div>
               </div>
 
@@ -110,7 +110,25 @@
 
 
           <div class="col-3 extra">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur magnam, vitae alias temporibus sequi impedit hic accusantium. Quasi vel aliquid perferendis tempore voluptatum. Aut, sed corporis officia commodi minima perspiciatis amet explicabo praesentium, est voluptatum aperiam excepturi consequatur numquam! Soluta dolor, sed officiis officia voluptatibus nesciunt fugiat nemo quam voluptas!
+              <div class="row status text-end">
+                  <div class="col-10 align-self-center fs-5">
+                      {{status}}
+                      <br/>
+                      آخر تحديث: {{currentTime}}
+                      <br />
+                      {{currentDay}}
+                  </div>
+                  <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+
+                      <svg class="svg-inline--fa fa-redo fa-w-16 mb-4" width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="redo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z"></path></svg>
+
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="qrcode" width="45"/>
+
+                      
+                  </div>
+              </div>
+
+              
           </div>
       </div>
     </div>
@@ -122,10 +140,20 @@
 
 <script>
 import $ from 'jquery'
+
+let date = new Date();
+let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+let day = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
+
 export default {
     data() {
         return {
-            isStatement : false
+            id: 1101234567,
+            name: 'محمد راشد البلوي',
+            isStatement : false,
+            status: 'محصّن', 
+            currentTime: time,
+            currentDay: day
         }
     },
 
@@ -198,4 +226,14 @@ li{
     font-size: 14px;
 }
 
+.status{
+    border-radius: 11px;
+    color: white;
+    padding: 20px;
+    background: linear-gradient(261deg, rgba(34,116,47,1) 0%, rgba(0,60,35,1) 100%);
+}
+
+.status img{
+    filter: invert(100%);
+}
 </style>
