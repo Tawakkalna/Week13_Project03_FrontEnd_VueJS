@@ -99,7 +99,7 @@ export default {
       password.value = ''
 
       axios
-        .post('http://tawakalna.maneea.net/api/login', loginDetails)
+        .post('https://tawakalna.maneea.net/api/login', loginDetails)
         .then((response) => {
             this.input_error = false;
           console.log(response)
