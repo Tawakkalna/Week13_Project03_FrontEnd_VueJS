@@ -287,7 +287,7 @@ export default {
             return;
         }
 
-        axios.get('http://tawakalna.maneea.net/api/user', {
+        axios.get('https://tawakalna.maneea.net/api/user', {
             headers: {
                 Authorization: `Bearer ${token}`,
             }
