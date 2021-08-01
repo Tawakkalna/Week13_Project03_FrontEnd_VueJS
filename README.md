@@ -56,7 +56,7 @@ yarn install
 #### # Run the app
 
 ```bash
-npm start
+npm run serve
 ```
 
 </div>

@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div dir="rtl" class="dropdown">
+    <!-- <div dir="rtl" class="dropdown">
       <button class="dropbtn">عربي</button>
-    </div>
+    </div> -->
     <div class="MainContainer">
       <img id="logo" src="../assets/twlogo.png" alt="tawakkalna logo" />
 
@@ -52,6 +52,8 @@
                 >نسيت كلمة المرور</a
               >
             </div>
+
+            <div class="text-danger" v-if="input_error">رقم الهوية أو كلمة المرور خطأ.</div>
             <!-- <router-link to="/details"> login </router-link>
              <router-view/> -->
             <button
@@ -76,8 +78,15 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+      return {
+          input_error: false,
+      }
+  },
   methods: {
     login: function(e) {
+        
+        
       const national_id = document.getElementById('national_id')
       const password = document.getElementById('password')
 
@@ -92,12 +101,14 @@ export default {
       axios
         .post('http://tawakalna.maneea.net/api/login', loginDetails)
         .then((response) => {
+            this.input_error = false;
           console.log(response)
           localStorage.setItem('token', response.data.token)
           this.$router.push('/details')
         })
-        .catch(function(error) {
-          console.log(error)
+        .catch((error) => {
+            this.input_error = true;
+            console.log(error)
         })
 
       e.preventDefault()

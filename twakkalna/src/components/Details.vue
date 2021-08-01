@@ -296,7 +296,7 @@ export default {
             console.log(response);
             const user = response.data.user;
             this.id = user.national_id;
-            this.name = user.name;
+            this.name = user.name_ar;
             this.status = user.immunity_status === "Immune" ? "محصن" : 'غير محصن';
             this.loading = false;
         })
