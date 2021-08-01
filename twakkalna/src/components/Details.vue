@@ -1,16 +1,41 @@
 <template >
   <section lang="ar" dir="rtl">
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg mb-3">
         <ul class="navbar-nav justify-content-between align-items-center w-100">
           <li class="nav-item">
             <a href="#">
               <img src="../assets/logo.svg" alt="logo" />
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">تسجيل الخروج</a>
-          </li>
+          
+          <div class="left-side">
+                
+
+
+            <svg class="svg-inline--fa fa-bell fa-w-14 fs-4" width="30" data-fa-transform="shrink-6" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="" style="transform-origin: 0.4375em 0.5em;"><g transform="translate(224 256)"><g transform="translate(0, 0)  scale(0.625, 0.625)  rotate(0 0 0)"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" transform="translate(-224 -256)"></path></g></g></svg>
+
+            <div class="dropdown1 text-end">
+                <a href="#">عربي</a>
+
+            <ul class="dropdown-content">
+                <a href="#" class='dropdown-item'>عربي</a>
+                <a href="#" class='dropdown-item'>English</a>
+                <a href="#" class='dropdown-item'>Filipino</a>
+                <a href="#" class='dropdown-item'>اردو</a>
+                <a href="#" class='dropdown-item'>Indonesia</a>
+            </ul>
+
+            </div>
+            <li class="nav-item d-inline-block">
+                  <a class="nav-link" href="#">تسجيل الخروج</a>
+                </li>
+          </div>
+
+          
+
+
+          
         </ul>
       </nav>
 
@@ -18,7 +43,7 @@
       <div class="row justify-content-around main">
           <div class="col-2 vertical-navbar text-end">
               <ul class="nav-list">
-                  <li class="my-5">
+                  <li class="mt-3">
                       <a href="#">
                       <span> <img src="../assets/arrow-left.png" alt="icon" width="20"/> </span> 
                       الرئيسية     
@@ -109,25 +134,109 @@
 
 
 
-          <div class="col-3 extra">
+          <div class="col-3 extra d-flex flex-column">
               <div class="row status text-end">
-                  <div class="col-10 align-self-center fs-5">
+                  
+                  <div class="row status-details">
+
+                      <div class="loading text-center" v-if="loading">
+                            <div class="spinner-border" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>
+                      </div>
+                      <div class="col-10 align-self-center fs-5" v-else>
                       {{status}}
                       <br/>
                       آخر تحديث: {{currentTime}}
                       <br />
                       {{currentDay}}
                   </div>
-                  <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                  <div class="col-2 d-flex flex-column justify-content-center align-items-center" v-if="!loading">
 
-                      <svg class="svg-inline--fa fa-redo fa-w-16 mb-4" width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="redo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z"></path></svg>
+                      <a @click="updateStatus">
+                          <svg class="svg-inline--fa fa-redo fa-w-16 mb-4" width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="redo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 
+                          0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z"></path></svg>
+                          </a>
 
                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="qrcode" width="45"/>
 
-                      
                   </div>
-              </div>
+                  </div>
 
+               
+              </div>
+                 <div class="extra-card health-status mt-4 py-3  h-100">
+                      <div class="row justify-content-center align-items-center">
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+
+                          <div class="col-8 text-end">
+                              <h4 class="fw-bold fs-5">الوضع الصحي</h4>
+                              <p>تفاصيل الوضع الصحي والألوان</p>
+
+                          </div>
+
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="extra-card health-status mt-4 py-3 h-100">
+                      <div class="row justify-content-center align-items-center">
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+
+                          <div class="col-8 text-end">
+                              <h4 class="fw-bold fs-5">استخدام كود QR زيارة مكان التجمع</h4>
+
+                          </div>
+
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                  <div class="extra-card health-status mt-4 py-3 h-100">
+                      <div class="row justify-content-center align-items-center">
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+
+                          <div class="col-8 text-end">
+                              <h4 class="fw-bold fs-5">أفراد الأسرة والمكفولون</h4>
+
+                          </div>
+
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+                          
+                      </div>
+                  </div>
+
+                   <div class="extra-card health-status mt-4 py-3 h-100">
+                      <div class="row justify-content-center align-items-center">
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+
+                          <div class="col-8 text-end">
+                              <h4 class="fw-bold fs-5">إحصائيات وزارة الصحة COVID-19</h4>
+
+                          </div>
+
+                          <div class="col-2">
+                              <img src="../assets/left-arow.svg" alt="arrow" width="20"/>
+                          </div>
+                          
+                      </div>
+                  </div>
               
           </div>
       </div>
@@ -142,7 +251,7 @@
 import $ from 'jquery'
 
 let date = new Date();
-let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+let time = date.toTimeString().split(' ')[0]
 let day = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
 
 export default {
@@ -153,12 +262,22 @@ export default {
             isStatement : false,
             status: 'محصّن', 
             currentTime: time,
-            currentDay: day
+            currentDay: day,
+            loading: false
         }
     },
-
+    methods: {
+        updateStatus(){
+            let date = new Date();
+            this.currentTime = date.toTimeString().split(' ')[0]
+            this.currentDay = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
+            this.loading = true
+            setTimeout(()=> this.loading = false , 2000)
+        }
+    },
     mounted() {
         $('body').css('background-color', '#f9f9f9');
+        $('#app').css('margin', 'auto');
     },
     
 }
@@ -186,7 +305,7 @@ li{
 }
 
 .extra{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 .nav-list a{
     color: white;
@@ -200,6 +319,7 @@ li{
 
 .nav-list li{
     transition: transform 1s;
+    padding: 5px;
     border-radius: 4px;
 }
 .nav-list li:hover{
@@ -235,5 +355,61 @@ li{
 
 .status img{
     filter: invert(100%);
+}
+
+.left-side{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-side a{
+    color: #636363;
+    text-decoration: none;
+}
+
+.dropdown1{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0px;
+    padding: 10px 12px 10px 35px;
+}
+.dropdown-content a{
+    display: block;
+}
+.dropdown1:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown1:hover a{
+    display: block;
+}
+
+.dropdown-item{
+    margin: 10px 0px ;
+}
+
+.health-status{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.extra-card{
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.extra-card:hover{
+    background-color: #e8eff7;
 }
 </style>
