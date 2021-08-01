@@ -1,15 +1,10 @@
 <template>
   <div class="">
     <div dir="rtl" class="dropdown">
-      <button  class="dropbtn"> عربي</button>
-      
+      <button class="dropbtn">عربي</button>
     </div>
     <div class="MainContainer">
-      <img
-        id="logo"
-        src="../assets/twlogo.png"
-        alt="tawakkalna logo"
-      />
+      <img id="logo" src="../assets/twlogo.png" alt="tawakkalna logo" />
 
       <div dir="rtl" class="card">
         <div class="container">
@@ -57,7 +52,7 @@
                 >نسيت كلمة المرور</a
               >
             </div>
-             <!-- <router-link to="/details"> login </router-link>
+            <!-- <router-link to="/details"> login </router-link>
              <router-view/> -->
             <button
               class="btn btn-primary btn-block mt-3"
@@ -74,40 +69,41 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios'
 
 export default {
-  name: "LoginPage",
+  name: 'LoginPage',
   props: {
     msg: String,
   },
   methods: {
     login: function(e) {
-      const national_id = document.getElementById("national_id");
-      const password = document.getElementById("password");
+      const national_id = document.getElementById('national_id')
+      const password = document.getElementById('password')
 
       const loginDetails = {
         national_id: national_id.value,
-        password: password.value
-      };
+        password: password.value,
+      }
 
-      national_id.value = "";
-      password.value = "";
+      national_id.value = ''
+      password.value = ''
 
-      axios.post('http://tawakalna.maneea.net/api/login', loginDetails)
-      .then((response) => {
-        console.log(response);
-        localStorage.setItem("token", response.data[0].token);
-        this.$router.push("/details");
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-      
-      e.preventDefault();
+      axios
+        .post('http://tawakalna.maneea.net/api/login', loginDetails)
+        .then((response) => {
+          console.log(response)
+          localStorage.setItem('token', response.data.token)
+          this.$router.push('/details')
+        })
+        .catch(function(error) {
+          console.log(error)
+        })
+
+      e.preventDefault()
     },
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -161,7 +157,6 @@ input {
   margin-bottom: 10px;
 }
 
-
 .textInnerDiv {
   display: flex;
   justify-content: space-around;
@@ -196,7 +191,7 @@ button {
 /* Dropdown Button */
 .dropbtn {
   background-color: #ffffff;
-  color: #04AA6D;
+  color: #04aa6d;
   font-size: 16px;
   border: none;
   width: 70px;
@@ -206,9 +201,8 @@ button {
 .dropdown {
   position: relative;
   display: inline-block;
-   display: flex;
-   flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -217,7 +211,7 @@ button {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -230,13 +224,18 @@ button {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #ffffff;}
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
 /* ----------- */
-
 </style>
