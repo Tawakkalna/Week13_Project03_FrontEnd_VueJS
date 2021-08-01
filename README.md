@@ -75,7 +75,7 @@ npm start
 
 ## License
 
-[Open Source License ➝ MIT](https://github.com/Tawakkalna/react-native/blob/main/LICENSE.md)
+[Open Source License ➝ MIT](https://github.com/Tawakkalna/vue/blob/main/LICENSE.md)
 
 </div>
 
