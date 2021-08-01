@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href=""><img src="https://i.stack.imgur.com/y9DpT.jpg" alt="demo"/></a>
+  <a href=""><img src="https://github.com/Tawakkalna/vue/blob/main/twakkalna/public/demo.gif" alt="demo"/></a>
 </p>
 
 <div id="key-features">
