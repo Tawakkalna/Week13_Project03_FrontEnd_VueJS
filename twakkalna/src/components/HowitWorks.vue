@@ -1,5 +1,6 @@
-<template>
-  <div class="container text-end">
+<template >
+  <section id="tawakkalna_section_3">
+    <div class="container text-end">
     <h1 class="header fw-bold my-5">كيف يعمل توكلنا؟</h1>
     <div class="fw-bold fs-2 mb-3" style="color: #323e4a">
       خطوات التسجيل في توكلنا
@@ -86,6 +87,7 @@
     </div>
       <Tutorial />
   </div>
+  </section>
 </template>
 <script>
 import $ from "jquery";

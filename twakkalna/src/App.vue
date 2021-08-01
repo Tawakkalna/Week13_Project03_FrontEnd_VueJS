@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar/>
+        <!-- <Navbar/>
         <Banner/>
         <div class="margin-top-100px" dir="rtl" lang="ar">
           <About/>
@@ -10,34 +10,37 @@
         <FAQ />
         <CountriesPartners />
         <ContactUs />
-        <Footer />
+        <Footer /> -->
+        <Details />
     </div>
 </template>
 
 <script>
-import Banner from './components/Banner.vue';
-import ContactUs from './components/ContactUs.vue';
-import Navbar from './components/Navbar.vue';
-import About from './components/About.vue';
-import Service from './components/Service.vue';
-import HowitWorks from './components/HowitWorks.vue';
-import CountriesPartners from './components/CountriesPartners.vue';
-import FAQ from "./components/FAQ.vue";
-import Footer from './components/Footer.vue';
+// import Banner from './components/Banner.vue';
+// import ContactUs from './components/ContactUs.vue';
+// import Navbar from './components/Navbar.vue';
+// import About from './components/About.vue';
+// import Service from './components/Service.vue';
+// import HowitWorks from './components/HowitWorks.vue';
+// import CountriesPartners from './components/CountriesPartners.vue';
+// import FAQ from "./components/FAQ.vue";
+// import Footer from './components/Footer.vue';
+import Details from './components/Details.vue';
 
 
 export default {
   name: "App",
   components: {
-    Banner,
-    Navbar,
-    About,
-    Service,
-    CountriesPartners,
-    HowitWorks,
-    FAQ,
-    ContactUs,
-    Footer
+    // Banner,
+    // Navbar,
+    // About,
+    // Service,
+    // CountriesPartners,
+    // HowitWorks,
+    // FAQ,
+    // ContactUs,
+    // Footer,
+    Details
   }
 }
 </script>
