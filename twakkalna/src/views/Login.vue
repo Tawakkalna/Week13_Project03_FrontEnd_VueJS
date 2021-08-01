@@ -26,12 +26,13 @@
           <form @submit.prevent="login">
             <div>
               <input
+                id="national_id"
                 placeholder="رقم الھویة الوطنیة/ هوية مقيم/ رقم الجوال"
                 type="text"
               />
             </div>
             <div>
-              <input type="password" placeholder="كلمة المرور" />
+              <input id="password" type="password" placeholder="كلمة المرور" />
             </div>
             <div class="second">
               <div class="textInnerDiv">
@@ -82,14 +83,21 @@ export default {
   },
   methods: {
     login: function(e) {
+      const national_id = document.getElementById("national_id");
+      const password = document.getElementById("password");
+
       const loginDetails = {
-        national_id: "1099664582",
-        password: "secret"
+        national_id: national_id.value,
+        password: password.value
       };
+
+      national_id.value = "";
+      password.value = "";
 
       axios.post('http://tawakalna.maneea.net/api/login', loginDetails)
       .then((response) => {
-        localStorage.setItem("token", response.data.token);
+        console.log(response);
+        localStorage.setItem("token", response.data[0].token);
         this.$router.push("/details");
       })
       .catch(function (error) {

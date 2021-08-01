@@ -249,10 +249,11 @@
 
 
 <script>
-import $ from 'jquery'
+import axios from 'axios';
+import $ from 'jquery';
 
 let date = new Date();
-let time = date.toTimeString().split(' ')[0]
+let time = date.toTimeString().split(' ')[0];
 let day = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
 
 export default {
@@ -279,6 +280,27 @@ export default {
     mounted() {
         $('body').css('background-color', '#f9f9f9');
         $('#app').css('margin', 'auto');
+        
+        const token = localStorage.getItem("token");
+
+        if(!token) {
+            return;
+        }
+
+        axios.get('http://tawakalna.maneea.net/api/user', {
+            headers: {
+                Authorization: `Bearer ${token}`,
+            }
+        })
+        .then((response) => {
+            console.log(response);
+            const user = response.data.user;
+            this.id = user.national_id;
+            this.name = user.name;
+            this.status = user.immunity_status === "Immune" ? "محصن" : 'غير محصن';
+            this.loading = false;
+        })
+        .catch((error) => console.log(error));
     },
     
 }
