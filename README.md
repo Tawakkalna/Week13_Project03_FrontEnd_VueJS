@@ -17,6 +17,11 @@
 
 <p align="center">
   <a href="https://tawakkalna.netlify.app/"><img src="https://github.com/Tawakkalna/vue/blob/main/twakkalna/public/demo.gif" alt="demo"/></a>
+  <br />
+  <br />
+  <br />
+  <img src="https://user-images.githubusercontent.com/82573117/127784008-fa2d7e5e-ca7d-44a6-aad3-63eb4a24c8c2.png" alt="details-image" />
+
 </p>
 
 <div id="key-features">
